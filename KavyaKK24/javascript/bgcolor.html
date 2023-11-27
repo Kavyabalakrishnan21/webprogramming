@@ -1,0 +1,15 @@
+<html>
+<title>changeColor</title>
+<body bgcolor="black">
+<button onclick="changeColor()">click me!
+</button>
+<script>
+var colors=["blue","red","yellow","green","pink"];
+var index=0
+function changeColor(){
+document.body.style.backgroundColor=colors[index];
+index=(index+1)%colors.length;
+}
+</script>
+</body>
+</html>
